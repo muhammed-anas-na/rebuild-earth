@@ -52,7 +52,7 @@ const Counter = () => {
               {plantCount.toLocaleString()} +
             </h1>
           </div>
-          <p className="text-gray-300 text-center">plants seeded</p>
+          <p className="text-gray-300 text-center">tree planted</p>
         </div>
       </div>
     </div>
