@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link
+            href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap"
+            rel="stylesheet"
+          />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

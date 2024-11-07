@@ -41,7 +41,7 @@ const Counter = () => {
               {memberCount.toLocaleString()} +
             </h1>
           </div>
-          <p className="text-gray-300 text-center">total members</p>
+          <p className="text-gray-300 text-center">total participants</p>
         </div>
         
         {/* Plants Stats */}

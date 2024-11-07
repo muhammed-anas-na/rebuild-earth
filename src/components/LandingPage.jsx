@@ -5,9 +5,10 @@ import NumberCounter from '@/components/Counter';
 import Counter from '@/components/Counter';
 
 const backgroundImages = [
-  '3.jpg', // Replace with actual image URLs
-  '4.jpg',
-  '5.jpg '
+  'image01.jpg', // Replace with actual image URLs
+  'image02.jpg',
+  'image03.jpg ',
+    'image04.jpg '
 ];
 
 const LandingPage = () => {
@@ -54,7 +55,7 @@ const LandingPage = () => {
               <a href="#" className="text-white hover:text-green-400">BLOG</a>
               <a href="#" className="text-white hover:text-green-400">CONTACT</a>
             </div>
-            <button className="bg-green-600 text-white text-sm px-2 md:px-6 md:py-2 rounded-full hover:bg-green-700">
+            <button className="bg-green-600 text-white text-sm px-3 md:px-6 md:py-2 rounded-full hover:bg-green-700">
               GET IN TOUCH
             </button>
           </div>
@@ -81,8 +82,8 @@ const LandingPage = () => {
 
         {/* Hero Content */}
         <div className="absolute inset-0 flex items-center justify-start px-8 md:px-16">
-          <div className="max-w-3xl">
-            <h1 className="text-3xl font-extrabold lg:text-6xl md:text-6xl text-white mb-4">
+          <div className="max-w-4xl">
+            <h1 className="text-3xl font-black lg:text-6xl md:text-6xl text-white mb-4">
               Don't Forget to nature your trees
             </h1>
             {/* <p className="text-lg md:text-xl text-white mb-8">
@@ -105,13 +106,13 @@ const LandingPage = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevImage}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
+          className="hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
         >
           <ChevronLeft size={24} />
         </button>
         <button
           onClick={nextImage}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
+          className="hidden md:block absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
         >
           <ChevronRight size={24} />
         </button>
