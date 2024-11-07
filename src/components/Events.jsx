@@ -5,11 +5,12 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
-      title: "2024",
+      title: "Sep 28-30 (2024)",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <span className="font-bold">Project Planning:</span> Conducted initial planning for a carbon neutrality project, including in-depth research to better understand its components and impact.
+          2 Execution Strategy: Developed an execution strategy, deciding on a trial run within Illahia Arts and Science College.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -45,14 +46,13 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "Oct 01-03 (2024)",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <span className="font-bold">Campaign Concept: </span>Designed a unique campaign for the trial, incorporating an engaging coin-based reward system called Greeny Coins.
+2 Greeny Coins Background: Inspired by a 15-year-old bartering game from South India, where children exchanged leaves, fostering a connection to nature.
+3 Coin System Setup: Outlined how participants could earn and redeem Greeny Coins, including discounts at local restaurants.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -88,29 +88,14 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Oct 04-05 (2024)",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
-          </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Timeline component integration
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Image gallery layout
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Responsive grid system
-            </div>
-          </div>
+          <p><span className="font-bold">Project Approval:</span>Presented the project to the college principal and manager, receiving approval to proceed with the trial run.
+            2 Team Formation: Built the project team with roles assigned to:
+            Founder: Shoaib Yoosaph
+            Co-founders: Beema Mol, Ali Akber TM, Saniya Manoj
+            Team Members: Muhammed Jabir, Afshan, Yaseen, Fahad, Safwan.</p>
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/api/placeholder/500/500"
