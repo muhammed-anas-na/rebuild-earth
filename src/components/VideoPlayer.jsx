@@ -3,7 +3,7 @@ import React from "react";
 
 const VideoPlayer = () => {
   return (
-    <div className="relative w-full h-full rounded-lg overflow-hidden md:px-20">
+    <div className="relative w-full h-full rounded-lg overflow-hidden md:px-20 mb-10">
       {/* Text Overlay */}
       <h1
         className="absolute top-14 left-32 text-white text-6xl font-bold line-clamp-6 font-sans"
@@ -19,7 +19,7 @@ const VideoPlayer = () => {
         loop
         muted
         playsInline
-        className="w-full h-full object-cover rounded-xl"
+        className="w-full h-[600px] object-cover rounded-xl"
       />
     </div>
   );

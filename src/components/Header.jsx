@@ -2,7 +2,7 @@ import HeaderMenu from "./HeaderMenu";
 
 export default function Header() {
     return (
-        <header className="flex justify-between text-white items-center my-5 md:mx-20">
+        <header className="flex justify-between text-white items-center my-10 md:mx-20">
             <div>
                 <img src="logo.jpg" alt="Logo" className="w-14 rounded-full" />
             </div>

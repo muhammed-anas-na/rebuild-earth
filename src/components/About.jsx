@@ -1,7 +1,7 @@
 import React from 'react';
 const About = () => {
     return (
-        <div className="relative flex items-center justify-between p-10 bg-white">
+        <div className="relative flex items-center justify-between py-20 p-10 bg-white">
             <div className="w-1/2 h-full">
                 <img
                     src='image03.jpg'
@@ -21,7 +21,7 @@ const About = () => {
                     <a href="#" className="bg-green-800 text-white px-6 py-3 rounded-md hover:bg-green-900">
                         About us
                     </a>
-                    <a href="#" className="text-green-800 px-6 py-3 rounded-md hover:bg-green-200">
+                    <a href="#" className="text-green-800 px-6 py-3 rounded-md border-2 border-green-800">
                         Our impact
                     </a>
                 </div>
