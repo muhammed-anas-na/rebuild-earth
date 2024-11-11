@@ -22,12 +22,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <link
-            href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap"
-            rel="stylesheet"
-          />
+          href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
       >
         {children}
       </body>
