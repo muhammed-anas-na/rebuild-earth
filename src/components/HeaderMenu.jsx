@@ -93,6 +93,7 @@ export default function HeaderMenu() {
           <NavigationMenuTrigger className="bg-[#1E4D37]">Components</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -130,6 +131,7 @@ const ListItem = React.forwardRef(function ListItem(
   return (
     <li>
       <NavigationMenuLink asChild>
+        
         <a
           ref={ref}
           className={cn(
@@ -138,6 +140,7 @@ const ListItem = React.forwardRef(function ListItem(
           )}
           {...props}
         >
+          <img src="image01.jpg" className="w-32 rounded-xl"/>
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}

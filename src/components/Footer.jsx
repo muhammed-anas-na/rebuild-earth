@@ -4,7 +4,7 @@ import { Music } from 'lucide-react'; // for TikTok icon
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2F4C3C] text-white py-16">
+    <footer className="bg-[#1E4D37] text-white py-16">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           {/* Logo and Description */}
