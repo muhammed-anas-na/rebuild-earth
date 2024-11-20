@@ -15,11 +15,11 @@ export default function LandingPage(){
       <About/>
       <Counter/>
       <Events/>
-      <div className="flex flex-wrap justify-around">
+      {/* <div className="flex flex-wrap justify-around">
       <CoinCard title={"Basic"} desc={"Coin"} image={"/coin05.jpeg"}/>
       <CoinCard title={"Basic"} desc={"Coin"} image={"/coin10.jpeg"}/>
       <CoinCard title={"Basic"} desc={"Coin"} image={"/coin50.jpeg"}/>
-      </div>
+      </div> */}
       <Footer/>
     </>
   )

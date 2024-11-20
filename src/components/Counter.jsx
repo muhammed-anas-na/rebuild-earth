@@ -3,7 +3,7 @@ import React from 'react';
 
 const Counter = () => {
   return (
-    <div className="h-svh flex justify-center items-center">
+    <div className="md:h-svh py-10 flex justify-center items-center">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <div className="text-[#1E4D37] bg-white flex flex-col justify-between px-8 py-8 rounded-xl gap-4">
           <span className="flex items-center gap-2">
