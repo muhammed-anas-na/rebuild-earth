@@ -31,7 +31,7 @@ const Events = () => {
 
   const projects = [
     {
-      name: 'GUATEMALA',
+      name: 'ILAHIA Collage',
       image: 'event01/image03.jpeg',
       projects: [
         'Resistance through reforestation in Guatemala',
