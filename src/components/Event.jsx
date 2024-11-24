@@ -4,13 +4,11 @@ import { Info, MapPin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import Header from '@/components/Header';
 
-const Event = ({title, description, location, image}) => {
+const Event = ({title, description, location, image=[]}) => {
   const [currentImage, setCurrentImage] = useState('');
-  
-  useEffect(() => {
+  useEffect(()=>{
     setCurrentImage(image[3]);
-  }, []);
-
+  },[image])
   return (
     <>
       <Header/>

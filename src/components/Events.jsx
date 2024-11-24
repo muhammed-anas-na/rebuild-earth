@@ -1,28 +1,31 @@
 "use client"
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const ProjectCard = ({ name, image, projects }) => (
   <div className="flex-shrink-0 w-full md:w-1/3 px-4 mb-8">
     <div className="overflow-hidden">
       {/* Fixed aspect ratio container */}
       <div className="relative aspect-w-16 aspect-h-9">
-        <a href="/event/ilahia-collage">
+        <Link href="/event/ilahia-collage">
         <img
           src={image}
           alt={`Project in ${name}`}
           className="w-full h-full object-cover rounded-xl"
         />
-        </a>
+        </Link>
       </div>
       <div className="p-6">
-        <h3 className="text-sm font-semibold text-gray-600 mb-3">{name}</h3>
         <div className="space-y-2">
           <div className="flex items-start">
             <div className="text-emerald-700 mr-2">›</div>
             <p className='text-emerald-700 '>Tree Planted event</p>
           </div>
         </div>
+        <Link href="/event/ilahia-collage">
+        <h3 className="text-sm font-semibold text-gray-600 mb-3">{name}</h3>
+      </Link>
       </div>
     </div>
   </div>
