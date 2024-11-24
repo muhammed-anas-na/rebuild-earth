@@ -14,40 +14,40 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const components = [
+const initiatives = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Tree Planting Programs",
+    href: "/initiatives/tree-planting",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Join our nationwide tree planting initiatives and contribute to increasing forest cover.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description: "For sighted users to preview content available behind a link.",
+    title: "Carbon Calculator",
+    href: "/tools/carbon-calculator",
+    description: "Calculate your carbon footprint and learn ways to reduce it.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "Education Resources",
+    href: "/resources/education",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Access educational materials about climate change, carbon neutrality, and environmental conservation.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Community Projects",
+    href: "/initiatives/community",
+    description: "Discover local community-led environmental projects and how to participate.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
+    title: "Progress Tracker",
+    href: "/impact/tracker",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "Track our progress towards national carbon neutrality goals and tree planting targets.",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
+    title: "Get Involved",
+    href: "/get-involved",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Find out how you can contribute to the Rebuild Earth initiative through volunteering or partnerships.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function HeaderMenu() {
     <NavigationMenu className="">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-[#1E4D37]">Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-[#1E4D37]">About Rebuild Earth</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -65,42 +65,39 @@ export default function HeaderMenu() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Rebuild Earth
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                      A government initiative to combat climate change through tree planting
+                      and promoting carbon neutrality awareness across the nation.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/about/mission" title="Our Mission">
+                Creating a sustainable future through nationwide tree planting and carbon reduction.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/about/goals" title="Goals">
+                Achieving carbon neutrality and increasing forest cover through community engagement.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/about/impact" title="Impact">
+                Track our progress and see the difference we're making together.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-[#1E4D37]">Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-[#1E4D37]">Initiatives</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              
-              {components.map((component) => (
+              {initiatives.map((initiative) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={initiative.title}
+                  title={initiative.title}
+                  href={initiative.href}
                 >
-                  {component.description}
+                  {initiative.description}
                 </ListItem>
               ))}
             </ul>
@@ -108,13 +105,18 @@ export default function HeaderMenu() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-[#1E4D37]">About</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-[#1E4D37]">Get Involved</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 <ListItem
-                title="Company"
-                href="/company">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ducimus aliquam non, aspernatur ut nemo nesciunt earum corrupti nam aperiam nihil, dolor fugiat repellat sapiente fuga voluptatibus, asperiores itaque! Nisi!
+                title="Volunteer"
+                href="/get-involved/volunteer">
+                  Join our tree planting events and community initiatives to make a direct impact on our environment.
+                </ListItem>
+                <ListItem
+                title="Partners"
+                href="/get-involved/partners">
+                  Discover partnership opportunities for organizations and businesses committed to environmental sustainability.
                 </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -131,7 +133,6 @@ const ListItem = React.forwardRef(function ListItem(
   return (
     <li>
       <NavigationMenuLink asChild>
-        
         <a
           ref={ref}
           className={cn(
@@ -140,7 +141,6 @@ const ListItem = React.forwardRef(function ListItem(
           )}
           {...props}
         >
-          <img src="image01.jpg" className="w-32 rounded-xl"/>
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
