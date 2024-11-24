@@ -7,11 +7,13 @@ const ProjectCard = ({ name, image, projects }) => (
     <div className="overflow-hidden">
       {/* Fixed aspect ratio container */}
       <div className="relative aspect-w-16 aspect-h-9">
+        <a href="/event/ilahia-collage">
         <img
           src={image}
           alt={`Project in ${name}`}
           className="w-full h-full object-cover rounded-xl"
         />
+        </a>
       </div>
       <div className="p-6">
         <h3 className="text-sm font-semibold text-gray-600 mb-3">{name}</h3>
@@ -32,7 +34,7 @@ const Events = () => {
   const projects = [
     {
       name: 'ILAHIA Collage',
-      image: 'event01/image03.jpeg',
+      image: 'ilahia-collage/image03.jpeg',
       projects: [
         'Resistance through reforestation in Guatemala',
         'Forests suspended between heaven and earth'
