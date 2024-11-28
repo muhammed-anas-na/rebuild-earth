@@ -4,6 +4,7 @@ import Counter from "./Counter";
 import Event from "./Event";
 import Events from "./Events";
 import Footer from "./Footer";
+import GreenyCoinShowcase from "./GreenyCoinShowcase";
 import Header from "./Header";
 import VideoPlayer from "./VideoPlayer";
 
@@ -15,7 +16,7 @@ export default function LandingPage(){
       <About/>
       <Counter/>
       <Events/>
-      <CoinComponent/>
+      <GreenyCoinShowcase/>
       <Footer/>
     </>
   )

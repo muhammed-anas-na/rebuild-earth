@@ -12,12 +12,12 @@ const Event = () => {
     duration: "September 2024 – November 2024",
     projectCoordinators: [
       'Shoaib Yoosaph', 'Ali Akber TM', 
-      'Afshan PA', 'Muhammed Jabir'
+      'Beema Mol', 'Saniya Manoj', 
     ],
     studentLeaders: [
-      'Beema Mol', 'Saniya Manoj', 
       'Fahad PJ', 'Muhammed Safwan',
-      'Yaseen Sudeer', 'Afnas Ali'
+      'Yaseen Sudeer', 'Afnas Ali',
+      'Afshan PA', 'Muhammed Jabir'
     ],
     images: [
       '/ilahia-collage/image01.jpeg',

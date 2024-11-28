@@ -67,7 +67,7 @@ const ContactUs = () => {
 
         <div className="space-y-6 md:space-y-8">
           {/* Chat Section */}
-          <div className="bg-[#1e2329] p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <div className="flex items-center gap-3 mb-3">
               <MessageSquare className="w-6 h-6" />
               <h3 className="text-lg font-medium">Chat to us</h3>
@@ -77,7 +77,7 @@ const ContactUs = () => {
           </div>
 
           {/* Call Section */}
-          <div className="bg-[#1e2329] p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <div className="flex items-center gap-3 mb-3">
               <Phone className="w-6 h-6" />
               <h3 className="text-lg font-medium">Call us</h3>

@@ -7,11 +7,14 @@ import Link from "next/link";
 
 export default function CoinComponent(){
   return(
+    <>
+    <h1 className="md:text-7xl font-medium text-white text-center mt-10 font-bold">Greeny Coins</h1>
     <div className="flex flex-wrap justify-around">
       <CoinCard title={"Basic"} desc={"Coin"} image={"/coin05.jpeg"}/>
       <CoinCard title={"Basic"} desc={"Coin"} image={"/coin10.jpeg"}/>
       <CoinCard title={"Basic"} desc={"Coin"} image={"/coin50.jpeg"}/>
   </div>
+  </>
   )
 }
 
