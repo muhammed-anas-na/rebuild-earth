@@ -5,6 +5,17 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import Link from "next/link";
 
+export default function CoinComponent(){
+  return(
+    <div className="flex flex-wrap justify-around">
+      <CoinCard title={"Basic"} desc={"Coin"} image={"/coin05.jpeg"}/>
+      <CoinCard title={"Basic"} desc={"Coin"} image={"/coin10.jpeg"}/>
+      <CoinCard title={"Basic"} desc={"Coin"} image={"/coin50.jpeg"}/>
+  </div>
+  )
+}
+
+
 export function CoinCard({title, image, desc}) {
   return (
     (<CardContainer className="inter-var">
