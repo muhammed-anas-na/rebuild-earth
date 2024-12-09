@@ -13,8 +13,11 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Rebuild Earth",
-  description: "Creating a sustainable future",
+  title: "Greeny Coins - Eco-Friendly Rewards",
+  description: "Join Greeny Coins to earn rewards for eco-friendly actions. Learn more about our initiatives and how you can contribute to a sustainable future.",
+  keywords: "Greeny Coins, eco-friendly, rewards, sustainability, carbon neutrality",
+  author: "Your Name",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({ children }) {
