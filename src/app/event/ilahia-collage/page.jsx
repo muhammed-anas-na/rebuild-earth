@@ -3,12 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Info, MapPin, Users, Tree, Award, Clock, Calendar } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import Header from '@/components/Header';
-export const metadata = {
-  title: "Rebuild Earth for Tomorrow - Ilahia College Event",
-  description: "Join us at Ilahia Arts and Science College for an event focused on carbon neutrality and sustainable practices.",
-  keywords: "Ilahia College, event, carbon neutrality, sustainability",
-};
-
 
 const Event = () => {
   const [currentImage, setCurrentImage] = useState('');
